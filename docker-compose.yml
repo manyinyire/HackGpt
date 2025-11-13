@@ -211,7 +211,7 @@ services:
 
   # Consul for Service Discovery
   consul:
-    image: consul:latest
+    image: hashicorp/consul:latest
     container_name: hackgpt-consul
     restart: unless-stopped
     command: agent -server -bootstrap-expect=1 -ui -client=0.0.0.0 -data-dir=/consul/data
